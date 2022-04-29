@@ -14,24 +14,41 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
       rel="stylesheet"
     />
-
-
   </head>
   <body>
-<div id="overlay-el" onclick="closeSideNav()" class="overlay  bg-black bg-opacity-40 w-screen h-screen fixed z-10 hidden">
-  <div id="slide" class="w-full slide sidebar-bg  fixed text-center flex flex-col justify-center items-center ">
-<ul class="flex flex-col  justify-center items-center space-y-8">
-  <li class="text-base font-semibold text-blue-100 tracking-tight">Home</li>
-  <li class="text-base font-semibold text-blue-100 tracking-tight">About</li>
-  <li class="text-base font-semibold text-blue-100 tracking-tight">Contact</li>
-  <li class="text-base font-semibold text-blue-100 tracking-tight">Register</li>
-</ul>
+    <div
+      id="overlay-el"
+      onclick="closeSideNav()"
+      class="overlay bg-black bg-opacity-40 w-screen h-screen fixed absolute z-20 hidden"
+    >
 
-  </div>
+        <div
+          id="slide"
+          class="w-full slide sidebar-bg fixed text-center flex flex-col justify-center items-center"
+        >
+          <div
+            class="w-full slide sidebar-bg fixed text-center flex flex-col justify-center items-center"
+          >
+            <ul class="flex flex-col justify-center items-center space-y-8">
+              <li class="text-base font-semibold text-blue-100 tracking-tight">
+                Home
+              </li>
+              <li class="text-base font-semibold text-blue-100 tracking-tight">
+                About
+              </li>
+              <li class="text-base font-semibold text-blue-100 tracking-tight">
+                Contact
+              </li>
+              <li class="text-base font-semibold text-blue-100 tracking-tight">
+                Register
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
-</div>
-
-    <header class="w-full fixed bg-white top-0 px-3 md:px-12 z-10">
+    <header class="w-full fixed top-0 px-3 md:px-12 z-5">
       <nav
         class="bg-white rounded-md flex flex-col md:flex-row p-4 justify-between"
       >
@@ -40,7 +57,13 @@
             >Gopluva</a
           >
 
-          <button id="sidebar-btn" class="block md:hidden text-4xl" onclick="showSideNav()">=</button>
+          <button
+            id="sidebar-btn"
+            class="block md:hidden text-4xl"
+            onclick="showSideNav()"
+          >
+            =
+          </button>
         </div>
 
         <div class="hidden md:block">
@@ -95,15 +118,25 @@
             Learn more
           </button>
           <button
-            class="bg-gray-100 flex  items-center transform transition hover:-translate-x-0.5 ml-5 text-blue-600 px-4 md:px-5 py-3 rounded-md shadow-md font-semibold uppercase"
+            class="bg-gray-100 flex items-center transform transition hover:-translate-x-0.5 ml-5 text-blue-600 px-4 md:px-5 py-3 rounded-md shadow-md font-semibold uppercase"
           >
-
-           contact us
-           <span class="ml-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
-            </svg>
-           </span>
+            contact us
+            <span class="ml-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
+                />
+              </svg>
+            </span>
           </button>
         </div>
       </div>
@@ -287,7 +320,6 @@
         <h1 class="text-center text-6xl font-bold">Start section</h1>
       </section>
     </main> -->
-
 
     <script src="./index.js"></script>
   </body>
