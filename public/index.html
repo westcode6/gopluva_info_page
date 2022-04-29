@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS Starter</title>
+    <link rel="stylesheet" href="dist/styles.css" />
+    <link rel="stylesheet" href="stylesheet.css" />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="w-full fixed bg-white top-0 px-4 md:px-12 z-10">
+      <nav
+        class="bg-white rounded-md flex flex-col md:flex-row p-4 justify-between"
+      >
+        <div class="flex items-center justify-between">
+          <a href="#" class="text-blue-600 text-2xl font-bold tracking-tight"
+          >Gopluva</a
+        >
+
+
+        <button class="block md:hidden text-4xl">=</button>
+        </div>
+
+        <div class="hidden md:block">
+          <ul class="flex items-center space-x-7">
+            <li
+              class="text-base font-semibold text-gray-600 border-b hover:border-blue-600 tracking-tight"
+            >
+              Home
+            </li>
+            <li
+              class="text-base font-semibold text-gray-600 border-b hover:border-blue-600 tracking-tight"
+            >
+              About
+            </li>
+            <li
+              class="text-base font-semibold text-gray-600 border-b hover:border-blue-600 tracking-tight"
+            >
+              Contact
+            </li>
+            <li
+              class="bg-blue-600 hover:bg-blue-500 transform transition hover:-translate-x-0.5 text-white uppercase font-semibold rounded-md shadow-md px-5 py-3"
+            >
+              Register
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero-section -->
+    <section
+      class="bg-gray-50 rounded-md shadow-2xl mt-20 md:mt-10 lg:mt-36 px-4 flex flex-col justify-center text-left md:text-center lg:text-left lg:flex-row lg:justify-between"
+    >
+      <div class="w-full lg:w-1/2 p-4 md:py-20 lg:p-16">
+        <h2
+          class="text-3xl md:text-6xl md:font-black lg:text-5xl font-semibold text-gray-900 capitalize leading-8"
+        >
+          Design better products. Design better user experience
+        </h2>
+        <p class="my-4 md:my-6 lg:my-8 leading-7 text-gray-600  text-base">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+          explicabo est illum delectus ratione quaerat provident porro nesciunt,
+          minima natus.
+        </p>
+
+        <div
+          class="flex items-center md:justify-center lg:justify-start py-5 md:py-10 lg:py-2"
+        >
+          <button
+            class="bg-blue-600 transform transition hover:-translate-x-0.5 text-white px-2 md:px-5 py-3 rounded-md shadow-md font-semibold uppercase"
+          >
+            Learn more
+          </button>
+          <button
+            class="bg-gray-100 transform transition hover:-translate-x-0.5 ml-5 text-blue-600 px-2 md:px-5 py-3 rounded-md shadow-md font-semibold uppercase"
+          >
+            Watch demo
+          </button>
+        </div>
+      </div>
+      <div class="w-full lg:w-1/2 h-full">
+        <img
+          src="./image/tech.webp"
+          class="object-cover object-center rounded-tl-md rounded-tr-md"
+          alt=""
+        />
+      </div>
+    </section>
+
+
+      <section
+
+        class="home-bg flex items-center justify-center"
+      >
+        <main class="py-12 lg:py-24 px-6 md:px-16 ">
+          <div class="w-full md:w-1/2">
+            <h2 class="text-2xl md:text-4xl font-semibold text-white">
+              Our Service
+            </h2>
+            <p class="py-3 text-white">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
+              nobis quod error. Quae esse autem eius illo nisi, nobis rerum.
+            </p>
+          </div>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10"
+          >
+            <div class="bg-blue-50 rounded-md shadow-md p-4">
+             <div class="bg-blue-100 rounded-md shadow-md">
+              <h3
+              class="w-12 h-12 flex items-center justify-center bg-blue-500 text-white rounded-md shadow-lg"
+            >
+              1
+            </h3>
+             </div>
+
+              <h2 class="text-xl mt-6 font-semibold text-gray-900 capitalize">Lorem ipsum dolor sit.</h2>
+
+              <p class="py-4 text-gray-600">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Architecto dignissimos nisi iure impedit unde doloremque cumque
+                voluptatum ut illum voluptates.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-md shadow-md p-4">
+
+              <div class="bg-green-50 rounded-xl shadow-md">
+                <h3
+                class="w-12 h-12 flex items-center justify-center bg-green-500 text-white rounded-xl shadow-xl"
+              >
+                2
+              </h3>
+                </div>
+                <h2 class="text-xl mt-6 font-semibold text-gray-900 capitalize">Lorem ipsum dolor sit.</h2>
+
+
+              <p class="py-4 text-gray-600">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Architecto dignissimos nisi iure impedit unde doloremque cumque
+                voluptatum ut illum voluptates.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-md shadow-md p-4">
+
+
+              <div class="bg-yellow-50 rounded-md shadow-md">
+                <h3
+                class="w-12 h-12 flex items-center justify-center bg-yellow-500 text-white rounded-xl shadow-xl"
+              >
+                3
+              </h3>
+                </div>
+
+              <h2 class="text-xl mt-6 font-semibold text-gray-900 capitalize">Lorem ipsum dolor sit.</h2>
+
+
+              <p class="py-4 text-gray-600">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Architecto dignissimos nisi iure impedit unde doloremque cumque
+                voluptatum ut illum voluptates.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-xl p-4">
+              <div class="bg-indigo-50 rounded-md shadow-md">
+                <h3
+                class="w-12 h-12 flex items-center justify-center bg-indigo-500 text-white rounded-xl shadow-xl"
+              >
+                4
+              </h3>
+              </div>
+
+              <h2 class="text-xl mt-6 font-semibold text-gray-900 capitalize">Lorem ipsum dolor sit.</h2>
+
+              <p class="py-4 text-gray-600">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Architecto dignissimos nisi iure impedit unde doloremque cumque
+                voluptatum ut illum voluptates.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-md shadow-md p-4">
+              <div class="bg-indigo-50 rounded-xl shadow-xl">
+                <h3
+                class="w-12 h-12 flex items-center justify-center bg-indigo-500 text-white rounded-xl shadow-xl"
+              >
+                4
+              </h3>
+              </div>
+
+              <h2 class="text-xl mt-6 font-semibold text-gray-900 capitalize">Lorem ipsum dolor sit.</h2>
+
+              <p class="py-4 text-gray-600">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Architecto dignissimos nisi iure impedit unde doloremque cumque
+                voluptatum ut illum voluptates.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-md shadow-md p-4">
+              <div class="bg-indigo-50 rounded-xl shadow-xl">
+                <h3
+                class="w-12 h-12 flex items-center justify-center bg-indigo-500 text-white rounded-xl shadow-xl"
+              >
+                4
+              </h3>
+              </div>
+
+              <h2 class="text-xl mt-6 font-semibold text-gray-900 capitalize">Lorem ipsum dolor sit.</h2>
+
+              <p class="py-4 text-gray-600">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Architecto dignissimos nisi iure impedit unde doloremque cumque
+                voluptatum ut illum voluptates.
+              </p>
+            </div>
+
+          </div>
+        </main>
+      </section>
+
+
+      <section class="px-4 py-24 bg-white flex items-center justify-between">
+        <div class="w-full lg:max-w-1/2 p-4">
+          <img src="./image/human.png" class="object-fit object-cover w-1/2" alt="">
+        </div>
+
+        <div class="w-full md:max-w-1/2 p-4">
+          <div class="w-full md:w-1/2">
+            <h2 class="text-2xl md:text-4xl font-semibold text-gray-900">
+              Our Mission
+            </h2>
+            <p class="py-3 text-gray-600">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
+              nobis quod error. Quae esse autem eius illo nisi, nobis rerum.
+            </p>
+          </div>
+        </div>
+
+      </section>
+<!--
+    <main class="container pt-20">
+
+      <section id="content-section">
+        <h1 class="text-center text-6xl font-bold">Start section</h1>
+      </section>
+
+      <section id="about-section">
+        <h1 class="text-center text-6xl font-bold">Start section</h1>
+      </section>
+
+      <section id="footer-section">
+        <h1 class="text-center text-6xl font-bold">Start section</h1>
+      </section>
+    </main> -->
+  </body>
+</html>

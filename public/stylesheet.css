@@ -1,0 +1,62 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family:  sans-serif;
+}
+
+.home-bg {
+background-image: url("./image/smile.webp");
+background-size: cover;
+object-fit: cover;
+}
+
+
+
+.container {
+scroll-snap-type: y mandatory;
+overflow-y: scroll;
+height: 100vh;
+}
+
+
+
+#start-section {
+height: 80vh;
+background: #5352ED;
+scroll-snap-align: start;
+}
+
+#content-section {
+height: 100vh;
+background: #fff;
+color: #000;
+display: flex;
+align-items: center;
+justify-content: center;
+scroll-snap-align: start;
+
+}
+
+#about-section {
+height: 100vh;
+background: #001E6C;
+color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+scroll-snap-align: start;
+
+}
+
+#footer-section {
+height: 100vh;
+background: #FF8C32;
+color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+scroll-snap-align: start;
+
+}
