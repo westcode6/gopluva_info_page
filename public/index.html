@@ -18,9 +18,9 @@
 
   </head>
   <body>
-<div id="overlay-el" onclick="closeSideNav()" class="overlay  bg-black bg-opacity-40 w-screen h-screen fixed z-10 hidden">
+<div id="overlay-el" onclick="closeSideNav()" class="overlay  bg-black bg-opacity-40 w-full fixed  hidden">
   <div id="slide" class="w-full slide sidebar-bg  fixed text-center flex flex-col justify-center items-center ">
-<ul class="flex flex-col  justify-center items-center space-y-8">
+<ul class="slide flex flex-col  justify-center items-center space-y-8">
   <li class="text-base font-semibold text-blue-100 tracking-tight">Home</li>
   <li class="text-base font-semibold text-blue-100 tracking-tight">About</li>
   <li class="text-base font-semibold text-blue-100 tracking-tight">Contact</li>
@@ -31,7 +31,7 @@
 
 </div>
 
-    <header class="w-full fixed bg-white top-0 px-3 md:px-12 z-10">
+    <header class="w-full fixed  top-0 px-3 md:px-12 z-5">
       <nav
         class="bg-white rounded-md flex flex-col md:flex-row p-4 justify-between"
       >
@@ -40,7 +40,7 @@
             >Gopluva</a
           >
 
-          <button id="sidebar-btn" class="block md:hidden text-4xl" onclick="showSideNav()">=</button>
+          <button id="sidebar-btn" class="block md:hidden  text-4xl" onclick="showSideNav()">=</button>
         </div>
 
         <div class="hidden md:block">
@@ -62,6 +62,7 @@
             </li>
             <li
               class="bg-blue-600 hover:bg-blue-500 transform transition hover:-translate-x-0.5 text-white uppercase font-semibold rounded-md shadow-md px-5 py-3"
+              onclick="showSideNav()"
             >
               Register
             </li>
