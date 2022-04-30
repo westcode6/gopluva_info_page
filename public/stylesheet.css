@@ -31,6 +31,26 @@ heigth: 100ch;
 }
 
 
+.form-slide {
+
+    position: absolute;
+    right: -600px;
+    width: 100%;
+    height: 100vh;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: form-slide 0.5s forwards;
+    animation-delay: 0.1s;
+}
+
+
+@-webkit-keyframes form-slide {
+    100% { right: 0; }
+}
+
+@keyframes form-slide {
+    100% { right: 0; }
+}
 
 .slide {
     position: absolute;

@@ -18,9 +18,9 @@
 
   </head>
   <body>
-<div id="overlay-el" onclick="closeSideNav()" class="overlay  bg-black bg-opacity-40 w-full fixed  hidden">
+<div id="overlay-el" onclick="closeSideNav()" class="overlay   bg-black bg-opacity-50 w-full fixed  hidden">
   <div id="slide" class="w-full slide sidebar-bg  fixed text-center flex flex-col justify-center items-center ">
-<ul class="slide flex flex-col  justify-center items-center space-y-8">
+<ul class="slide-text flex flex-col  justify-center items-center space-y-8">
   <li class="text-base font-semibold text-blue-100 tracking-tight">Home</li>
   <li class="text-base font-semibold text-blue-100 tracking-tight">About</li>
   <li class="text-base font-semibold text-blue-100 tracking-tight">Contact</li>
@@ -92,8 +92,10 @@
         >
           <button
             class="bg-blue-600 transform transition hover:-translate-x-0.5 text-white px-4 md:px-5 py-3 rounded-md shadow-md font-semibold uppercase"
+
+            onclick="showForm()"
           >
-            Learn more
+            register
           </button>
           <button
             class="bg-gray-100 flex  items-center transform transition hover:-translate-x-0.5 ml-5 text-blue-600 px-4 md:px-5 py-3 rounded-md shadow-md font-semibold uppercase"
@@ -273,21 +275,42 @@
         </div>
       </div>
     </section>
-    <!--
-    <main class="container pt-20">
 
-      <section id="content-section">
-        <h1 class="text-center text-6xl font-bold">Start section</h1>
-      </section>
 
-      <section id="about-section">
-        <h1 class="text-center text-6xl font-bold">Start section</h1>
-      </section>
+    <section id="form-el" class="hidden">
 
-      <section id="footer-section">
-        <h1 class="text-center text-6xl font-bold">Start section</h1>
-      </section>
-    </main> -->
+      <div id="formOverlay-el" onclick="hideForm()" class="overlay form-slide w-full h-full home-bg flex justify-center items-center px-4 py-10">
+          <div class="bg-white px-8 py-4 rounded-md shadow-xl text-center">
+            <h3 class="text-xl font-semibold text-blue-600 mt-4">Register with Gopluva</h3>
+            <p class="py-4 font-semibold text-sm text-gray-500">Hey, Enter your details to get you sign up to your account</p>
+
+            <div>
+
+              <input type="text" placeholder="Enter Full Name" class="w-full border mt-4 border-gray-300 px-3 py-3 text-xs rounded-md shadow-md">
+
+
+              <input type="text" placeholder="Enter Email / Phone No" class="w-full border mt-4 border-gray-300 px-3 py-3 text-xs rounded-md shadow-md">
+              <input type="text" placeholder="Password" class="w-full border mt-4 border-gray-300 px-3 py-3 text-xs rounded-md shadow-md">
+
+              <p class="my-6 tracking-wide text-xs text-gray-500 font-semibold text-left">Having trouble in sign in?</p>
+
+              <button class="block w-full py-3 bg-blue-600 hover:bg-blue-500  focus:ring focus:ring-inset-1 text-white font-semibold rounded-md shadow-md transform transition hover:-translate-y-0.5">Sign in</button>
+
+              <h5 class="my-5 text-sm text-gray-800 font-semibold">-- Or Sign in with --</h5>
+
+              <div class="flex items-center justify-center space-x-3">
+                <button class="border border-gray-300 px-3 py-2 text-xs rounded-md shadow-md">Google</button>
+                <button class="border border-gray-300 px-3 py-2 text-xs rounded-md shadow-md">Apple ID</button>
+                <button class="border border-gray-300 px-3 py-2 text-xs rounded-md shadow-md">Facebook</button>
+              </div>
+
+              <h5 class="mb-5 mt-10 tracking-wide text-xs text-gray-500 font-semibold text-center">Don't have an account? <span class="font-bold text-gray-900">Request Now</span></h5>
+
+              </h5>
+            </div>
+          </div>
+      </div>
+    </section>
 
 
     <script src="./index.js"></script>
